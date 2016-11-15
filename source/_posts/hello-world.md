@@ -3,6 +3,7 @@ title: hello-world
 date: 2016-11-10 00:16:18
 tags:
 	- test
+	- 杂
 ---
 
 折腾了几天，看了好多人的教程，终于通过hexo在github上搭出自己的博客。。。
