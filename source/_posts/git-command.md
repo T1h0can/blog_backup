@@ -16,6 +16,8 @@ cd dirname
 git init
 ```
 
+<!-- more -->
+
 ## 克隆仓库
 克隆一个本地仓库
 > git clone /path/to/repository
@@ -37,6 +39,9 @@ git init
 # 添加和提交
 每当有文件更改,可以添加到Index:
 > git add filename
+
+修改文件太多可以用以下命令查看当前分支与远端分支的差异:
+> git status
 
 提交改动到HEAD:
 > git commit -m "改动信息"
@@ -61,3 +66,17 @@ git init
 > git branch -d test
 
 # 更新与合并
+从远端下载并合并到本地仓库:
+> git pull
+
+但是这样是不安全的，最好把pull拆分成fetch和merge两部分
+> git fetch
+
+从远端仓库下载
+
+> git merge <branch>
+
+合并仓库
+合并仓库时把任意分支的内容合并到当前分支合并之前可以用以下命令先查看当前分支和要合并进来的分支有何区别:
+> git diff <branch>
+
