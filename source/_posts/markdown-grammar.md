@@ -1,8 +1,9 @@
 ---
-title: markdown语法总结
+title: markdown语法总结备忘
 date: 2016-11-15 22:27:29
 tags:
 	- markdown
+	- 备忘
 ---
 
 markdown基本语法防健忘备忘录。。。
@@ -111,4 +112,14 @@ markdown支持有序列表和无需列表
 _斜体_
 **加粗**
 __加粗__
+```
+
+# 表格
+
+```
+| left | center | right |
+| :------- | :----------: |  ---------: |
+|左对齐 | 居中   | 右对齐 |
+| aaaa  | bbbb | cccc  |
+| a         | b         | c          |
 ```
