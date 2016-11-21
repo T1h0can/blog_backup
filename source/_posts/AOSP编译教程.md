@@ -125,7 +125,10 @@ Which would you like? [aosp_arm-eng]
 **注意** 此处n是机器的cpu的线程数，举个例子：如果你的机器的cpu是i7-6700k，6700k是四核八线程，所以这里n是8的时候理论上是编译速度最快的
 
 接下来就是等待。。。当显示
-> #### make completed successfully (00：45：27 (hh:mm:ss)) ####
+
+```
+#### make completed successfully (49:58 (mm:ss)) ####
+```
 
 说明编译成功
 
@@ -136,13 +139,17 @@ Which would you like? [aosp_arm-eng]
 等一会就会出现模拟器的画面
 
 # 附录
-AOSP编译额外命令：
-- `croot` 回到aosp源码树根目录
-- `godir [filename]` 跳转到包含某个文件的目录
-- `m` 在源码树的根目录执行编译
-- `mm` 编译当前路径下所有模块，但不包含依赖
-- `mma` 编译当前路径下所有模块，且包含依赖
-- `mmm [module_path]` 编译指定路径下所有模块，但不包含依赖
-- `mmma [module_path]` 编译指定路径下所有模块，且包含依赖
-- `make snod` 重新打包生成system.img
+AOSP编译额外命令
+
+|         命令        |                解释             |
+| :----------------- | :------------------------------ |
+| croot              | 回到aosp源码树根目录              |
+| godir [filename]   | 跳转到包含某个文件的目录           |
+| m                  | 在源码树的根目录执行编译           |
+| mm                 | 编译当前路径下所有模块，但不包含依赖 |
+| mma                | 编译当前路径下所有模块，且包含依赖   |
+| mmm [module_path]  | 编译指定路径下所有模块，但不包含依赖 |
+| mmma [module_path] | 编译指定路径下所有模块，且包含依赖   |
+| make snod          | 重新打包生成system.img            |
+| make otapackage    | 编译生成.zip格式的刷机包           |
 
